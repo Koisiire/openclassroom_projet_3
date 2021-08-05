@@ -1,0 +1,126 @@
+$color_: #F6F6F6;
+$taille_haut_de_page: 3%;
+$color_btn: #CF68DA;
+a {
+    text-decoration: none;
+    color: black;
+}
+#head {
+    margin-left: 50%;
+    height: $taille_haut_de_page;
+    width: 50%;
+}
+
+.research_ville {
+    background-color: $color_;
+    height: $taille_haut_de_page;
+}
+
+.reservaton {
+    height: 13%;
+    background-color: $color_;
+}
+
+.btn_reservation {
+    background-color: $color_btn;
+    width: 220px;
+    height: 55px;
+    border-radius: 35px;
+}
+
+.fonctionnement {
+    height: 20%;
+}
+
+.tout_menu {
+    height: 55%;
+    background-color: $color_;
+}
+
+.restaurant {
+    background-color: white;
+    width: 25%;
+    height: 11%;
+    border-radius: 50px;
+}
+
+.img_menu {
+    object-fit: cover;
+    width: 25%;
+    height: 15%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.btn_restaurant {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    height: 10%;
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        width: 100%;
+        margin-left: 0%;
+    }
+    #head {
+        width: 80%;
+        height: $taille_haut_de_page;
+        margin-left: 20%;
+        }
+
+        .research_ville {
+            width: 100%;
+            background-color: $color_;
+        }
+
+        .tout_menu {
+            height: 1225px;
+        }
+
+        .restaurant
+        {
+            width: 337px;
+            height: 250px;
+            margin-top: 17px;
+            margin-left: 19px;
+        }
+
+        .img_menu {
+            width: 337px;
+            height: 174px;
+        }
+
+        .name_restaurant {
+            line-height: 0.12rem;
+            margin-left: 3%;
+        }
+
+        .info_restaurant {
+            line-height: 0.17rem;
+            margin-left: 3%;
+        }
+
+        .logo_footer {
+            margin-left: 3%;
+            width: 7rem;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .fin_page {
+            display: flex;
+            flex-direction: column;
+            height: 195px;
+        }
+
+        .info_site {
+            margin-left: 3%;
+        }
+    
+}
