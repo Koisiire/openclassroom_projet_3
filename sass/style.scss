@@ -6,19 +6,42 @@ a {
     color: black;
 }
 #head {
-    margin-left: 50%;
-    height: $taille_haut_de_page;
-    width: 50%;
+    height: 100px;
+}
+
+.logo {
+    margin-left: 30px;
 }
 
 .research_ville {
+    display: flex;
+    align-items: center;
     background-color: $color_;
-    height: $taille_haut_de_page;
+    height: 63px;
+}
+
+.fa-map-marker-alt{
+    margin-left: 105px;
+    font-size: 1.3rem;
+}
+
+.btn_search {
+    font-size: 1.3rem;
+    margin-left: 16px;
 }
 
 .reservaton {
-    height: 13%;
+    height: 290px;
     background-color: $color_;
+}
+.titre_reservation {
+    margin-left: 65px;
+    font-size: 2rem;
+}
+
+.info_reservation {
+    font-size: 1.5rem;
+    margin-left: 40px;
 }
 
 .btn_reservation {
@@ -26,10 +49,41 @@ a {
     width: 220px;
     height: 55px;
     border-radius: 35px;
+    padding: 1em;
+    margin-left: 90px;
+    margin-top: 100px;
 }
 
 .fonctionnement {
     height: 20%;
+    padding-left: 19px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: $color_;
+    width: 326px;
+    height: 75px;
+    border-radius: 20px;
+}
+
+.numero {
+    background-color: $color_btn;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 0.5em;
+    font-size: 0.8rem;
+}
+
+.btn_fonction {
+    margin-left: 23px;
+}
+
+.btn_fonction {
+    margin-left: 20px;
 }
 
 .tout_menu {
@@ -41,15 +95,15 @@ a {
     background-color: white;
     width: 25%;
     height: 11%;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .img_menu {
     object-fit: cover;
     width: 25%;
     height: 15%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .btn_restaurant {
@@ -61,6 +115,10 @@ footer {
     flex-direction: column;
     background-color: #353535;
     height: 10%;
+}
+
+.info_site {
+    color: white;
 }
 
 @media screen and (max-width: 376px) {
@@ -81,6 +139,11 @@ footer {
 
         .tout_menu {
             height: 1225px;
+        }
+
+        .info_restaurant {
+            margin-left: 19px;
+            margin-bottom: 20px;
         }
 
         .restaurant
@@ -107,7 +170,7 @@ footer {
         }
 
         .logo_footer {
-            margin-left: 3%;
+            margin-left: 5%;
             width: 7rem;
             margin-top: 25px;
             margin-bottom: 25px;
@@ -117,6 +180,7 @@ footer {
             display: flex;
             flex-direction: column;
             height: 195px;
+            margin-left: 5%;
         }
 
         .info_site {
