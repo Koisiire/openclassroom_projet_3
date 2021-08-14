@@ -1,12 +1,11 @@
-$color_: #F6F6F6;
-$taille_haut_de_page: 3%;
-$color_btn: #CF68DA;
+@import "base";
 a {
     text-decoration: none;
     color: black;
 }
 #head {
     height: 100px;
+    box-shadow: 2px 6px 7px 0px rgba(207,207,207,0.89);
 }
 
 .logo {
@@ -35,7 +34,7 @@ a {
     background-color: $color_;
 }
 .titre_reservation {
-    margin-left: 65px;
+    margin: 0px 0px;
     font-size: 2rem;
 }
 
@@ -45,7 +44,7 @@ a {
 }
 
 .btn_reservation {
-    background-color: $color_btn;
+    background: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
     width: 220px;
     height: 55px;
     border-radius: 35px;
@@ -91,6 +90,25 @@ a {
     background-color: $color_;
 }
 
+.info_restaurant {
+    margin-left: 19px;
+    margin-bottom: 20px;
+}
+
+.nouveau {
+    position: absolute;
+    right: 35px;
+    margin-top: 15px;
+    background-color: #99E2D0;
+    width: 70px;
+    color: #008766;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px;
+    border-radius: 4px;
+    text-align: center;
+}
+
 .restaurant {
     background-color: white;
     width: 25%;
@@ -108,6 +126,16 @@ a {
 
 .btn_restaurant {
     text-decoration: none;
+}
+
+.fa-heart {
+    position: absolute;
+    right: 35px;
+    font-size: 1.2rem;
+}
+
+.fa-heart a:hover {
+    background-color: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
 }
 
 footer {
@@ -141,10 +169,6 @@ footer {
             height: 1225px;
         }
 
-        .info_restaurant {
-            margin-left: 19px;
-            margin-bottom: 20px;
-        }
 
         .restaurant
         {
