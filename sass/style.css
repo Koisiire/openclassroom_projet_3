@@ -5,8 +5,8 @@ a {
 
 #head {
   height: 100px;
-  -webkit-box-shadow: 2px 6px 7px 0px rgba(207, 207, 207, 0.89);
-          box-shadow: 2px 6px 7px 0px rgba(207, 207, 207, 0.89);
+  -webkit-box-shadow: 5px 6px 7px 2px #CECECE;
+          box-shadow: 5px 6px 7px 2px #CECECE;
 }
 
 .logo {
@@ -20,8 +20,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F6F6F6;
+  background-color: #EAEAEA;
   height: 63px;
+  -webkit-box-shadow: 5px 5px 15px #cecece inset;
+          box-shadow: 5px 5px 15px #cecece inset;
 }
 
 .fa-map-marker-alt {
@@ -40,13 +42,16 @@ a {
 }
 
 .titre_reservation {
+  padding-top: 55px;
   margin: 0px 0px;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .info_reservation {
-  font-size: 1.5rem;
-  margin-left: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .btn_reservation {
@@ -56,7 +61,7 @@ a {
   border-radius: 35px;
   padding: 1em;
   margin-left: 90px;
-  margin-top: 100px;
+  color: white;
 }
 
 .fonctionnement {
@@ -68,6 +73,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: linear-gradient(160deg, #ff79da 1%, #9356dc 84%);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,13 +84,18 @@ a {
   border-radius: 20px;
 }
 
-.numero {
-  background-color: #CF68DA;
+.btn_numero {
+  background-color: #9356DB;
   width: 25px;
   height: 25px;
-  border-radius: 100%;
+  border-radius: 100px;
   padding: 0.5em;
   font-size: 0.8rem;
+  color: white;
+}
+
+.numero {
+  font-size: 0.8;
 }
 
 .btn_fonction {
@@ -98,6 +109,11 @@ a {
 .tout_menu {
   height: 55%;
   background-color: #F6F6F6;
+}
+
+.proposotion_restaurant {
+  margin-left: 19px;
+  padding-top: 50px;
 }
 
 .nouveau {
@@ -134,14 +150,18 @@ a {
   text-decoration: none;
 }
 
-.fa-heart {
-  position: absolute;
+.btn_coeur {
+  background-color: white;
   right: 35px;
   font-size: 1.2rem;
+  right: 10%;
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.fa-heart a:hover {
-  background-color: linear-gradient(160deg, #ff79da 1%, #9356dc 84%);
+.btn_coeur:hover {
+  color: linear-gradient(160deg, #ff79da 1%, #9356dc 84%);
 }
 
 footer {
@@ -176,10 +196,6 @@ footer {
   }
   .tout_menu {
     height: 1225px;
-  }
-  .info_restaurant {
-    margin-left: 19px;
-    margin-bottom: 20px;
   }
   .restaurant {
     width: 337px;

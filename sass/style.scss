@@ -5,7 +5,7 @@ a {
 }
 #head {
     height: 100px;
-    box-shadow: 2px 6px 7px 0px rgba(207,207,207,0.89);
+    box-shadow: 5px 6px 7px 2px #CECECE;
 }
 
 .logo {
@@ -15,8 +15,9 @@ a {
 .research_ville {
     display: flex;
     align-items: center;
-    background-color: $color_;
+    background-color: #EAEAEA;
     height: 63px;
+    box-shadow: 5px 5px 15px #cecece inset;
 }
 
 .fa-map-marker-alt{
@@ -33,24 +34,29 @@ a {
     height: 290px;
     background-color: $color_;
 }
+
+
 .titre_reservation {
+    padding-top: 55px;
     margin: 0px 0px;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 .info_reservation {
-    font-size: 1.5rem;
-    margin-left: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .btn_reservation {
-    background: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
+    background: $color_bouton;
     width: 220px;
     height: 55px;
     border-radius: 35px;
     padding: 1em;
     margin-left: 90px;
-    margin-top: 100px;
+    color: white;
 }
 
 .fonctionnement {
@@ -60,6 +66,7 @@ a {
 
 .btn {
     display: flex;
+    color: $color_bouton;
     align-items: center;
     margin-bottom: 25px;
     background-color: $color_;
@@ -68,13 +75,18 @@ a {
     border-radius: 20px;
 }
 
-.numero {
-    background-color: $color_btn;
+.btn_numero {
+    background-color: #9356DB;
     width: 25px;
     height: 25px;
-    border-radius: 100%;
+    border-radius: 100px;
     padding: 0.5em;
     font-size: 0.8rem;
+    color: white;
+}
+
+.numero {
+    font-size: 0.8;
 }
 
 .btn_fonction {
@@ -90,9 +102,9 @@ a {
     background-color: $color_;
 }
 
-.info_restaurant {
+.proposotion_restaurant {
     margin-left: 19px;
-    margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 .nouveau {
@@ -128,14 +140,18 @@ a {
     text-decoration: none;
 }
 
-.fa-heart {
-    position: absolute;
+.btn_coeur {
+    background-color: white;
     right: 35px;
     font-size: 1.2rem;
+    right: 10%;
+    position: absolute;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.fa-heart a:hover {
-    background-color: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
+.btn_coeur:hover {
+    color: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
 }
 
 footer {
