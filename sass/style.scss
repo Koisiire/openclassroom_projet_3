@@ -85,6 +85,11 @@ a {
     color: white;
 }
 
+.btn:hover {
+    background-color: #F5EDFF;
+    cursor: pointer;
+}
+
 .numero {
     font-size: 0.8;
 }
@@ -140,7 +145,7 @@ a {
     text-decoration: none;
 }
 
-.btn_coeur {
+.fa-heart {
     background-color: white;
     right: 35px;
     font-size: 1.2rem;
@@ -150,15 +155,15 @@ a {
     cursor: pointer;
 }
 
-.btn_coeur:hover {
+.fa-heart:hover {
     color: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
+    cursor: pointer;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     background-color: #353535;
-    height: 10%;
 }
 
 .info_site {
@@ -219,7 +224,7 @@ footer {
         .fin_page {
             display: flex;
             flex-direction: column;
-            height: 195px;
+            height: 210px;
             margin-left: 5%;
         }
 
