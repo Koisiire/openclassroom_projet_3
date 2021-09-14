@@ -1,4 +1,6 @@
+/* index.html */
 @import "base";
+@import "_menupage";
 a {
     text-decoration: none;
     color: black;
@@ -77,11 +79,11 @@ a {
 
 .btn_numero {
     background-color: #9356DB;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 100px;
-    padding: 0.5em;
-    font-size: 0.8rem;
+    padding: 4px 8px ;
+    font-size: 14px;
     color: white;
 }
 
@@ -102,7 +104,7 @@ a {
     margin-left: 20px;
 }
 
-.tout_menu {
+.tout_restaurant {
     height: 55%;
     background-color: $color_;
 }
@@ -133,7 +135,7 @@ a {
     border-radius: 20px;
 }
 
-.img_menu {
+.img_restaurant {
     object-fit: cover;
     width: 25%;
     height: 15%;
@@ -170,6 +172,7 @@ footer {
     color: white;
 }
 
+/* mobile index.html */
 @media screen and (max-width: 376px) {
     body {
         width: 100%;
@@ -186,7 +189,7 @@ footer {
             background-color: $color_;
         }
 
-        .tout_menu {
+        .tout_restaurant {
             height: 1225px;
         }
 
@@ -199,7 +202,7 @@ footer {
             margin-left: 19px;
         }
 
-        .img_menu {
+        .img_restaurant {
             width: 337px;
             height: 174px;
         }
@@ -233,3 +236,5 @@ footer {
         }
     
 }
+
+/* menu.html */

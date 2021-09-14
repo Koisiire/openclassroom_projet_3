@@ -1,0 +1,111 @@
+@import "base";
+/* menu.html */
+.a_la_française {
+    display: flex;
+    flex-direction: row;
+    background-color: $color_;
+    height: 63px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_menu {
+    padding-left: 110px;
+    width: 10rem;
+}
+
+.fa-arrow-left {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 15px;
+    margin-left: 19px;
+}
+
+.img_menu {
+    width: 100%;
+    object-fit: cover;
+    height: 251px;
+}
+
+.tout_menu {
+    background-color: $color_;
+    height: 1196px;
+}
+
+.tout_menu_2 {
+    background-color: $color_;
+    height: 1300px;
+}
+
+.test {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.titre_menu {
+    margin-left: 19px;
+}
+
+.head {
+    margin-left: 15px;
+    border-bottom: 2px solid $color_2;
+    width: 38px;
+}
+
+.choix_menu {
+    width: 350px;
+    height: 60px;
+    background: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    box-shadow: 1px 1px #CECECE;
+}
+
+.choix_menu:hover {
+    background-color: #F5EDFF;
+    cursor: pointer;
+}
+
+.price_menu {
+    position: absolute;
+    right: 35px;
+}
+
+.composition_menu {
+    font-size: 0.965rem;
+    margin: 10px 0px 0px 15px;
+    padding-top: 13px;
+}
+
+.info_menu {
+    font-size: 0.965rem;
+    line-height: 0.8rem;
+    margin: 0px 0px 0px 15px;
+}
+
+.btn_commande {
+    display: flex;
+    align-items: center;
+    background: $color_bouton;
+    width: 185px;
+    height: 51px;
+    border-radius: 35px;
+    margin-left: 90px;
+    margin-top: 40px;
+    color: white;
+}
+
+.btn_commander {
+    color: white;
+    margin-left: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+}
+
+.info_site {
+    color: white;
+}

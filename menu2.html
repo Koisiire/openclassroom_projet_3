@@ -1,99 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A la française</title>
 <body>
 <!-- Titre -->
-    <header>
-        <div>
-            <a><i></i></a><h2>Ohmyfood</h2>
-        </div>
-        <div>
-            <img class="img_menu" src="image/restaurant/stil.jpg">
-            <h1>La note enchantée</h1><i class="fal fa-heart"></i>
-        </div>
-    </header>
+<header>
+    <div id="a_la_française">
+        <a><i class="fas fa-arrow-left"></i></a><img class="logo_menu" src="image/logo/ohmyfood.png">
+    </div>
+</header>
 <!--entré_menu-->
-    <main>
-        <div class="menu">
-            <h4 class="head">ENTREES</h4>
-            <div>
-                <h2 class="composition_menu">Ravioles de fois gras</h2>
-                <p class="info_menu">Accompagnés de leur crème à la truffe</p><p class="price_menu"><strong>25€</strong></p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Caviar osciètre</h2>
-                <p class="info_menu">Sur blini à la farine de blé noir</p><p class="price_menu"><strong>35€</strong></p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Homard et espuma de...</h2>
-                <p class="info_menu">Mariné aux zests d'orange</p><p class="price_menu">20€</p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Foie gras de canard cuit entier</h2>
-                <p class="info_menu">Confiture de figue et pain toasté</p><p class="price_menu">35€</p>
-            </div>
+<article class="tout_menu_2">
+    <img class="img_menu" src="image/restaurant/stil.jpg">
+    <h1 class="titre_menu">La note enchantée<i class="far fa-heart"></i></h1>
+    <div class="menu">
+        <p class="head">ENTREES</p>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Ravioles de foie gras</h2>
+            <p class="info_menu">Accompagnés de leur crème à la truffe<strong class="price_menu">25€</strong></p>
         </div>
-        <div class="menu">
-            <h4 class="head">PLATS</h4>
-            <div>
-                <h2 class="composition_menu">Noix de coquilles Saint-Jacques</h2>
-                <p class="info_menu">Sur lit de puréé de céleri-rave</p><p class="price_menu"><strong>40€</strong></p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Langoustine poêlée</h2>
-                <p class="info_menu">Mijoté de queue de boeuf</p><p class="price_menu"><strong>35€</strong></p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Pigeonneau d'Ille-et-Vilaine</h2>
-                <p class="info_menu">Sur son lit de gnocchis aux légumes</p><p class="price_menu">44€</p>
-            </div>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Caviar osciètre</h2>
+            <p class="info_menu">Sur blini à la farine de blé noir<strong class="price_menu">35€</strong></p>
         </div>
-        <div class="menu">
-            <h4 class="head">DESSERTS</h4>
-            <div>
-                <h2 class="composition_menu">Macaron noissette et chocolat</h2>
-                <p class="info_menu">Glace au caramel brun et sel de Guérande</p><p class="price_menu"><strong>18€</strong></p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Baba au rhum revisité</h2>
-                <p class="info_menu">Avec son coulis de citron</p><p class="price_menu"><strong>22€</strong></p>
-            </div>
-            <div>
-                <h2 class="composition_menu">Tarte au citron meringuée</h2>
-                <p class="info_menu">Destructurée</p><p class="price_menu">23€</p>
-            </div>
-            <div>
-                <a href="#">Commander</a>
-            </div>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Homard et espuma de...</h2>
+            <p class="info_menu">Mariné aux zests d'orange<strong class="price_menu">20€</strong></p>
         </div>
-    </main>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Foie gras de canard cuit entier</h2>
+            <p class="info_menu">Confiture de figue et pain toasté<strong class="price_menu">35€</strong></p>
+        </div>
+    </div>
+    <div class="menu">
+        <p class="head">PLATS</p>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Noix de coquilles Saint-Jacques</h2>
+            <p class="info_menu">Sur lit de purée de céleri-rave<strong class="price_menu">40€</strong></p>
+        </div>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Langoustine poêlée</h2>
+            <p class="info_menu">Purée de patate douce<strong class="price_menu">35€</strong></p>
+        </div>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Mijoté de queue de boeuf</h2>
+            <p class="info_menu">Et riz sauvage aux zests de citron<strong class="price_menu">44€</strong></p>
+        </div>
+    </div>
+    <div class="menu">
+        <p class="head">DESSERTS</p>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Macaron noisette et chocolat</h2>
+            <p class="info_menu">Glace au caramel brun et sel de Guérande<strong class="price_menu">18€</strong></p>
+        </div>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Baba au rhum revisité</h2>
+            <p class="info_menu">Avec son coulis de citron<strong class="price_menu">22€</strong></p>
+        </div>
+        <div class="choix_menu">
+            <h2 class="composition_menu">Tarte au citron meringuée</h2>
+            <p class="info_menu">Destructurée<strong class="price_menu">25€</strong></p>
+        </div>
+    </div>
+            <div class="btn_commande"><a class="btn_commander" href="#">Commander</a></div>
+</article>
 <!-- Fin de la page -->
-    <footer>
-        <div>
-            <img class="logo_footer" src="image/logo/ohmyfood.png">
-            <a href="#">
-                <span class="icon">
-                    <i class="fas fa-utensils"></i>
-                </span>
-                Proposer un restaurant
-            </a>
-            <a href="#">
-                <span class="icone">
-                    <i class="fas fa-hands-helping"></i>
-                </span>
-                Devenir partenaire
-            </a>
-            <a href="#">
-                Mentions légales
-            </a>
-            <a href="#">
-                Contact
-            </a>
-    <   </div>
-    </footer>
+<footer>
+    <div class="fin_page">
+        <img class="logo_footer" src="image/logo/ohmyfood.png">
+        <a class="info_site" href="#">
+            <span class="icon">
+                <i class="fas fa-utensils"></i>
+            </span>
+            Proposer un restaurant
+        </a>
+        <a class="info_site" href="#">
+            <span class="icone">
+                <i class="fas fa-hands-helping"></i>
+            </span>
+            Devenir partenaire
+        </a>
+        <a class="info_site" href="#">
+            Mentions légales
+        </a>
+        <a class="info_site" href="#">
+            Contact
+        </a>
+    </div>
+</footer>
     <script src="https://kit.fontawesome.com/0b23a07234.js" crossorigin="anonymous"></script>
 </body>
 </html>
