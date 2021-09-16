@@ -24,22 +24,25 @@
 .img_menu {
     width: 100%;
     object-fit: cover;
-    height: 251px;
 }
 
 .tout_menu {
     background-color: $color_;
     height: 1196px;
 }
-
+/* menu2.htm */
 .tout_menu_2 {
     background-color: $color_;
     height: 1300px;
 }
-
+/* fin menu 2 */
 .test {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-top: -40px;
+    margin-bottom: -15px;
+    background-color: #F6F6F6;
+    z-index: 1;
 }
 
 .titre_menu {
