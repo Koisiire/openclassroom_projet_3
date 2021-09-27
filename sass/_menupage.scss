@@ -21,8 +21,14 @@
     margin-left: 19px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .img_menu {
     width: 100%;
+    height: 256px;
     object-fit: cover;
 }
 
@@ -33,20 +39,20 @@
 /* menu2.htm */
 .tout_menu_2 {
     background-color: $color_;
-    height: 1300px;
+    height: 1280px;
 }
 /* fin menu 2 */
-.test {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.menu_choix {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     margin-top: -40px;
     margin-bottom: -15px;
     background-color: #F6F6F6;
-    z-index: 1;
 }
 
 .titre_menu {
     margin-left: 19px;
+    font-family: Shrikhand;
 }
 
 .head {
@@ -64,10 +70,27 @@
     box-shadow: 1px 1px #CECECE;
 }
 
+.annimation1 {
+    animation: menu_defile 2s;
+}
+
+.annimation2 {
+    animation: menu_defile 3s;
+}
+
+.annimation3 {
+    animation: menu_defile 4s;
+}
+
+.annimation4 {
+    animation: menu_defile 5s;
+}
+
 .choix_menu:hover {
     background-color: #F5EDFF;
     cursor: pointer;
 }
+
 
 .price_menu {
     position: absolute;
@@ -78,12 +101,20 @@
     font-size: 0.965rem;
     margin: 10px 0px 0px 15px;
     padding-top: 13px;
+    font-family: Roboto;
 }
 
 .info_menu {
     font-size: 0.965rem;
     line-height: 0.8rem;
     margin: 0px 0px 0px 15px;
+    font-family: Roboto;
+}
+
+.fa-check-circle {
+    height: 60px;
+    background-color: #98E2CF;
+    transition: right 2s;
 }
 
 .btn_commande {
@@ -94,7 +125,7 @@
     height: 51px;
     border-radius: 35px;
     margin-left: 90px;
-    margin-top: 40px;
+    margin-top: 60px;
     color: white;
 }
 

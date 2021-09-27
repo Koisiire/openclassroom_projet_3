@@ -1,14 +1,11 @@
 /* index.html */
 @import "base";
-@import "menupage";
+@import "_menupage";
 a {
     text-decoration: none;
     color: black;
 }
 
-p {
-    font-family: Roboto;
-}
 #head {
     height: 100px;
     box-shadow: 5px 6px 7px 2px #CECECE;
@@ -47,7 +44,6 @@ p {
     margin: 0px 0px;
     font-size: 1.6rem;
     text-align: center;
-    font-family: Shrikhand;
 }
 
 .info_reservation {
@@ -173,6 +169,12 @@ footer {
     background-color: #353535;
 }
 
+.titre_footer {
+    color: white;
+    margin-left: 10px;
+    font-family: Shrikhand;
+}
+
 .info_site {
     color: white;
 }
@@ -227,6 +229,7 @@ footer {
             width: 7rem;
             margin-top: 25px;
             margin-bottom: 25px;
+            color: white;
         }
 
         .fin_page {
@@ -241,5 +244,3 @@ footer {
         }
     
 }
-
-/* menu.html */
