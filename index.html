@@ -7,22 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <title>Ohmyfood</title>
 <body>
-    <!--Titre-->
+<!--Titre-->
     <header>
         <div id=head>
             <img class="logo" src="image/logo/ohmyfood@2x.svg">
         </div>
     </header>
         <div class="research_ville">
-            <i class="fas fa-map-marker-alt"></i>
-            <a class="btn_search">Paris,Belleville</a>
+            <i class="fas fa-map-marker-alt"><a class="btn_search">Paris,Belleville</a></i>
         </div>
 <!-- Réservation -->
     <main>
         <div class="reservaton">
             <h3 class="titre_reservation">Réservez le menu qui vous convient</h3>
             <p class="info_reservation">Découvrez des restaurants d'exception, séléctionnés pas nos soins</p>
-            <span><a class="btn_reservation">Explorer nos restaurants</a></span>
+            <span><a class="btn_reservation"><strong>Explorer nos restaurants</strong></a></span>
         </div>
         <div class="fonctionnement">
             <h3 class="indentity_fonction"><strong>Fontionnement</strong></h3>
@@ -37,17 +36,18 @@
             </div>
         </div>
     </main>
+<!-- Restaurants -->
     <article class="tout_restaurant">
         <h2 class="proposotion_restaurant"><strong> Restaurant </strong></h2>
      <div class="conteneur_restaurant">
-        <div class="restaurant">
-            <a class="btn_restaurant" href="menu1.html">
+        <a class="btn_restaurant" href="menu1.html">
+            <article class="restaurant">
                 <span class="nouveau"><strong>Nouveau</strong></span>
                 <img class="img_restaurant" src="image/restaurant/jay-wennington.jpg">
-                <h3 class="name_restaurant">La palette du goût <a class="btn_coeur"><i class="far fa-heart"></i></a></h3>
+                <h3 class="name_restaurant">La palette du goût <a class="btn_coeur"><span><i class="far fa-heart"></i></span></a></h3>
                 <p class="info_restaurant">Ménilmontant</p>
-            </a>
-       </div>
+            </article>
+        </a>
         <div class="restaurant">
             <a class="btn_restaurant" href="menu2.html">
                 <span class="nouveau"><strong>Nouveau</strong></span>
@@ -73,27 +73,30 @@
         </div>
      </div>
     </article>
+<!-- Fin de page -->
     <footer>
         <div class="fin_page">
+            <div class="info_page">
             <h3 class="titre_footer">ohmyfood</h3>
             <a class="info_site" href="#">
                 <span class="icon">
                     <i class="fas fa-utensils"></i>
                 </span>
-                Proposer un restaurant
+                <strong>Proposer un restaurant</strong>
             </a>
             <a class="info_site" href="#">
                 <span class="icone">
                     <i class="fas fa-hands-helping"></i>
                 </span>
-                Devenir partenaire
+                <strong>Devenir partenaire</strong>
             </a>
             <a class="info_site" href="#">
-                Mentions légales
+                <strong>Mentions légales</strong>
             </a>
             <a class="info_site" href="#">
-                Contact
+                <strong>Contact</strong>
             </a>
+            </div>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/0b23a07234.js" crossorigin="anonymous"></script>

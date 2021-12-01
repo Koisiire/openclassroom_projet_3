@@ -4,8 +4,8 @@ $taille_haut_de_page: 3%;
 $color_bouton: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
 $info_menu: margin-left 15%;
 $color_2: #98e2cf;
-$font_titre: font-family Shrikhand;
-$font_text: font-family Roboto;
+$font_titre: Shrikhand;
+$font_text: Roboto;
 @keyframes menu_defile {
     from {
         transform: translateY(200px);
@@ -14,5 +14,14 @@ $font_text: font-family Roboto;
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+@keyframes menu_retrecie {
+    from {
+        
+    }
+    to {
+        margin-right: 18%;
+        animation-play-state: running;
     }
 }
