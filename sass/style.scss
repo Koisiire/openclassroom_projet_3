@@ -137,9 +137,10 @@ a {
 }
 
 .proposotion_restaurant {
-    margin-left: 19px;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
-    margin-left: 45%;
+    margin: auto;
     font-family: $font_text;
 }
 
@@ -196,6 +197,10 @@ a {
     font-weight: bold;
     cursor: pointer;
     margin-left: 8%;
+}
+.fa-heart:hover {
+    animation: coeur;
+    cursor: pointer;
 }
 
 .fa-heart:hover {
@@ -268,6 +273,10 @@ a {
 
         .tout_restaurant {
             height: 1225px;
+        }
+
+        .proposotion_restaurant {
+            display: block;
         }
 
         .conteneur_restaurant {

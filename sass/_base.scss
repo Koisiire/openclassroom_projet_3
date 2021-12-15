@@ -18,10 +18,22 @@ $font_text: Roboto;
 }
 @keyframes menu_retrecie {
     from {
-        
+        width: 0%;
+        opacity: 0;
     }
     to {
-        margin-right: 18%;
-        animation-play-state: running;
+        width: 25%;
+        opacity: 1;
+    }
+}
+
+@keyframes coeur {
+    from {
+        opacity: 50;
+        background-color: $color_bouton;
+    }
+    to {
+        opacity: 1;
+        background-color: $color_bouton;
     }
 }

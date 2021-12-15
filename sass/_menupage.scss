@@ -52,7 +52,6 @@ main {
 /* menu2.htm */
 .tout_menu_2 {
     background-color: $color_;
-    height: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,30 +62,27 @@ main {
 .conteneur {
     display: flex;
     overflow: hidden;
-      .fa-check-circle {
-        overflow: hidden;
+    background: white;
+    box-shadow: 1px 1px #cecece;
+    border-radius: 15px;
+    min-width: 320px;
+    margin: 10px;
+    .overlay {
         display: flex;
+        background: #98E2CF;
         justify-content: center;
         align-items: center;
-        background-color: #99e2d0;
-        width: 69px;
-        height: 60px;
         color: white;
-        margin: 0px -150px 0px 80px;
-        font-size: 20px;
-        left: 425px;
-        border-radius: 0 15px 15px 0;
-        position: absolute;
-        transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-        i {
-            font-size: 25px;
+        animation: menu_retrecie 2s;
+        .annim_check {
+            cursor: pointer;
+            animation: menu_retrecie 2s;
         }
-
-      }
+    }
+    
 }
 
 .fa-check-circle {
-    height: 60px;
     background-color: #98E2CF;
     transition: right 2s;
 }
@@ -105,6 +101,10 @@ main {
     justify-content: center;
 }
 
+.fa-heart {
+    transition: coeur;
+}
+
 h1 {
     font-size: 1,5rem;
 }
@@ -117,11 +117,9 @@ h1 {
 }
 
 .choix_menu {
-    width: 350px;
-    height: 60px;
-    background: white;
-    border-radius: 20px;
-    margin-left: 10px;
+    width: 100%;
+    padding: 10px;
+    height: 40px;
     box-shadow: 1px 1px #CECECE;
 }
 
@@ -148,22 +146,28 @@ h1 {
 
 .composition_menu {
     font-size: 0.965rem;
-    margin: 10px 0px 0px 15px;
-    padding-top: 13px;
     font-family: $font_text;
+    margin: 0;
 }
 
 .info_menu {
     font-size: 0.965rem;
     line-height: 0.8rem;
-    margin: 0px 0px 0px 15px;
+    margin: 0;
     font-family: $font_text;
+    display: flex;
+}
+
+.price_menu {
+    margin-left: auto;
 }
 
 .fa-check-circle {
     display: none;
     transform: rotate(360deg);
     transition: 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 
 .btn_commande {
@@ -205,11 +209,6 @@ footer {
         display: block;
     }
 
-    .price_menu {
-        position: absolute;
-        right: 35px;
-    }
-
     .price_menu:hover {
         animation: menu_retrecie 2s;
         right: 45px;
@@ -225,28 +224,6 @@ footer {
         margin-left: 25%;
         margin-top: 60px;
         color: white;
-    }
-
-    .conteneur {
-        display: flex;
-        overflow: hidden;
-          .fa-check-circle {
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #99e2d0;
-            width: 69px;
-            height: 60px;
-            color: white;
-            font-size: 20px;
-            left: 212px;
-            transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-            i {
-                font-size: 25px;
-            }
-    
-          }
     }
 
     .fa-check-circle {
