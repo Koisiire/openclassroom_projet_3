@@ -67,25 +67,33 @@ main {
     border-radius: 15px;
     min-width: 320px;
     margin: 10px;
-    .overlay {
-        display: flex;
-        background: #98E2CF;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        animation: menu_retrecie 2s;
-        .annim_check {
-            cursor: pointer;
-            animation: menu_retrecie 2s;
-        }
-    }
-    
+}
+
+.overlay {
+    overflow: hidden;
+    width: 0;
+    display: flex;
+    background: #98E2CF;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.conteneur:hover .overlay {
+    cursor: pointer;
+    animation: menu_retrecie 2s;
+    animation-fill-mode: forwards;
 }
 
 .fa-check-circle {
+    cursor: pointer;
     background-color: #98E2CF;
-    transition: right 2s;
+    transition: transform 2s 3s;
 }
+.conteneur:hover .fa-check-circle {
+    cursor: pointer;
+    transform: rotate(720deg);
+}
+
 .menu_choix {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;

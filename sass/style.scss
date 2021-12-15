@@ -199,13 +199,12 @@ a {
     margin-left: 8%;
 }
 .fa-heart:hover {
-    animation: coeur;
+    animation: coeur 2s;
     cursor: pointer;
-}
-
-.fa-heart:hover {
-    color: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
-    cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
 }
 
 .fin_page {

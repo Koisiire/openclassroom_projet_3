@@ -24,16 +24,16 @@ $font_text: Roboto;
     to {
         width: 25%;
         opacity: 1;
+        animation-play-state: paused;
     }
 }
 
 @keyframes coeur {
     from {
-        opacity: 50;
-        background-color: $color_bouton;
+        opacity: 0;
     }
     to {
-        opacity: 1;
+        opacity: 10;
         background-color: $color_bouton;
     }
 }
