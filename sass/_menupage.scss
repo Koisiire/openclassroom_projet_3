@@ -80,18 +80,19 @@ main {
 }
 .conteneur:hover .overlay {
     cursor: pointer;
-    animation: menu_retrecie 2s;
+    animation: menu_retrecie 1s;
     animation-fill-mode: forwards;
 }
 
 .fa-check-circle {
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
     background-color: #98E2CF;
-    transition: transform 2s 3s;
+    transition: 1s;
 }
 .conteneur:hover .fa-check-circle {
     cursor: pointer;
-    transform: rotate(720deg);
+    transform: rotate(360deg);
 }
 
 .menu_choix {
@@ -147,15 +148,16 @@ h1 {
     animation: menu_defile 5s;
 }
 
-.choix_menu:hover {
-    cursor: pointer;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-}
-
 .composition_menu {
     font-size: 0.965rem;
     font-family: $font_text;
     margin: 0;
+}
+.conteneur:hover .composition_menu {
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .info_menu {
@@ -163,19 +165,16 @@ h1 {
     line-height: 0.8rem;
     margin: 0;
     font-family: $font_text;
-    display: flex;
+}
+.conteneur:hover .info_menu {
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price_menu {
     margin-left: auto;
-}
-
-.fa-check-circle {
-    display: none;
-    transform: rotate(360deg);
-    transition: 0.4s ease-in-out;
-    display: flex;
-    justify-content: center;
 }
 
 .btn_commande {
@@ -217,9 +216,21 @@ footer {
         display: block;
     }
 
-    .price_menu:hover {
-        animation: menu_retrecie 2s;
+    .conteneur:hover .info_menu {
+        width: 210px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .price_menu {
         right: 45px;
+        position: absolute;
+    }
+
+    .conteneur:hover .price_menu {
+        right: 100px;
+        position: absolute;
     }
 
     .btn_commande {
@@ -232,12 +243,6 @@ footer {
         margin-left: 25%;
         margin-top: 60px;
         color: white;
-    }
-
-    .fa-check-circle {
-        height: 60px;
-        background-color: #98E2CF;
-        transition: rotate 2s;
     }
     
 }

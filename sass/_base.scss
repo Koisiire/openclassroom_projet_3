@@ -37,3 +37,13 @@ $font_text: Roboto;
         background-color: $color_bouton;
     }
 }
+
+@keyframes rotate {
+    from {
+        transform: rotate(100deg);
+    }
+    to {
+        transition: 2s 3s;
+        transform: rotate(360deg);
+    }
+}
