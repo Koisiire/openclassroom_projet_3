@@ -7,6 +7,40 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.chargement_loader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    animation: 10s page_loader;
+    font-size: 4rem;
+}
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.loader_page {
+    border-radius: 50px;
+    border: 6px solid rgba(255,255,255,0.4);
+}
+.loader_page:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: green;
+    animation: rotate_loader 1s linear infinite;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -248,7 +282,7 @@ a {
         margin: auto;
     }
     
-    .btn_reservation{
+    .btn_reservation {
         margin: auto;
     }
 
@@ -350,5 +384,5 @@ a {
         .info_site {
             margin-left: 3%;
         }
-    
+
 }

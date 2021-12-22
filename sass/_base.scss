@@ -47,3 +47,21 @@ $font_text: Roboto;
         transform: rotate(360deg);
     }
 }
+
+@keyframes page_loader {
+    from {
+        position: absolute;
+    }
+    to {
+        position: relative;
+    }
+}
+
+@keyframes rotate_loader {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
