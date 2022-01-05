@@ -11,11 +11,20 @@ body {
 .chargement_loader {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: grey;
-    animation: 10s page_loader;
+    animation: page_loader 4s;
     font-size: 4rem;
+    visibility: hidden;
+    margin: auto;
 }
 .loader {
     width: 50px;
@@ -110,10 +119,12 @@ a {
 }
 
 .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 20%;
     width: 370px;
     margin: auto;
-    padding-left: 19px;
 }
 
 .indentity_fonction {
@@ -159,7 +170,6 @@ a {
 }
 
 .tout_restaurant {
-    height: 650px;
     background-color: $color_;
 }
 
@@ -168,6 +178,7 @@ a {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .proposotion_restaurant {
@@ -223,20 +234,38 @@ a {
 .btn_restaurant {
     text-decoration: none;
 }
+.coeur {
+    margin-left: auto;
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
 
-.fa-heart {
+.titre_plat {
+    display: flex;
+}
+
+i.far.fa-heart {
     background-color: white;
+}
+.fa-heart {
     font-size: 1.2rem;
     position: absolute;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 8%;
+    right: 0;
 }
-.fa-heart:hover {
+.coeur:hover .fa-heart {
     animation: coeur 2s;
     cursor: pointer;
     background-clip: text;
-    background: -webkit-linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%);
+    color: transparent;
+    background-color: #9900FF;
+    -webkit-background-color: $color_bouton; /**#FF80DA  #9356DC -webkit-linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%)**/
+}
+.fa-heart::before:hover {
+    content: 'fa fa-heart';
+    background-color: #008766;
 }
 
 .fin_page {
@@ -264,13 +293,6 @@ a {
     color: white;
     font-family: $font_text;
 }
-@media screen and (max-width: 727px) {
-    .tout_restaurant {
-        height: 1225px;
-    }
-
-}
-
 /* mobile index.html */
 @media screen and (max-width: 376px) {
     body {
@@ -300,10 +322,6 @@ a {
         .proposotion_restaurant {
             margin-left: 8%;
             padding-top: 50px;
-        }
-
-        .tout_restaurant {
-            height: 1225px;
         }
 
         .proposotion_restaurant {

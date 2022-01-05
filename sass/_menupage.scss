@@ -104,12 +104,27 @@ main {
 }
 
 .titre_menu {
-    margin-left: 19px;
     font-family: $font_titre;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin: auto
 }
 
+.coeur1 {
+    position: relative;
+    right: 80px;
+    top: -50px;
+    margin-left: 10px;
+}
+.coeur1:hover .fa-heart {
+    animation: coeur 2s;
+    cursor: pointer;
+    background-clip: text;
+    color: transparent;
+    background-color: #9900FF;
+    -webkit-background-color: $color_bouton; /**#FF80DA  #9356DC -webkit-linear-gradient(160deg, rgba(255,121,218,1) 1%, rgba(147,86,220,1) 84%)**/
+}
 .fa-heart {
     transition: coeur;
 }
@@ -209,11 +224,10 @@ footer {
 @media screen and (max-width: 376px) {
     .tout_menu {
         background-color: $color_;
-        height: 1196px;
     }
 
-    .titre_menu {
-        display: block;
+    .coeur1 {
+        right: auto;
     }
 
     .conteneur:hover .info_menu {
