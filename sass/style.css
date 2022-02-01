@@ -252,6 +252,7 @@ main {
 }
 
 .conteneur:hover .overlay {
+  width: 20%;
   cursor: pointer;
   -webkit-animation: menu_retrecie 1s;
           animation: menu_retrecie 1s;
@@ -325,7 +326,10 @@ h1 {
   width: 100%;
   padding: 10px;
   height: 40px;
-  box-shadow: 1px 1px #CECECE;
+}
+
+.conteneur:hover .choix_menu {
+  width: 80%;
 }
 
 .annimation1 {
@@ -355,7 +359,6 @@ h1 {
 }
 
 .conteneur:hover .composition_menu {
-  width: 230px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -369,14 +372,22 @@ h1 {
 }
 
 .conteneur:hover .info_menu {
-  width: 230px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.menu_et_prix {
+  display: flex;
+  width: 100%;
+}
+
+.conteneur:hover .menu_et_prix {
+  width: 80%;
+}
+
 .price_menu {
-  margin-left: auto;
+  margin-top: 13px;
 }
 
 .btn_commande {
